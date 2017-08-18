@@ -14,10 +14,15 @@ Import the directive into your app module.
 ## Usage
 
 dati.initialize(function);
+
 dati.insert(table, json, function);
+
 dati.update(table, json, field, id, function);
+
 dati.selectAll(table, function);
+
 dati.delete(table, field, id, function);
+
 dati.existRow(table, function);
 
 ## Example
@@ -29,7 +34,7 @@ dati.initialize(function (status)
     {
       alert('error.');
     } 
-	}) 
+}) 
   
 dati.insert("user", {"nome":"Thiago Feijór"}, function(codigo){
   //return
@@ -49,7 +54,7 @@ dati.existRow("user", function(retorno){
     if(retorno === true){ 
       //your code
     } 
-	}) 
+}) 
 ```
 
 ## Contribute
